@@ -1,0 +1,136 @@
+:root {
+    --primary-color: #2ecc71;
+    --secondary-color: #27ae60;
+	--hover-color: #556B2F;
+    --text-color: #333;
+    --background-color: #f9f9f9;
+    --header-background: #ffffff;
+    --footer-background: #34495e;
+}
+
+/* Body styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.navbar {
+    background-color: var(--header-background);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--hover-color);
+}
+
+.navbar-toggler-icon {
+    display: block !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0,0,0,0.5)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+    width: 30px;
+    height: 30px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Lokales Menü */
+#lokales-menü .list-group-item:hover {
+    background-color: var(--hover-color);
+    color: #fff;
+}
+
+/* Tabelle */
+.table-hover tbody tr:hover {
+    background-color: rgba(85, 107, 47, 0.2); /* Olivgrün, aber dezenter */
+    color: inherit; /* Behält die ursprüngliche Schriftfarbe bei */
+}
+
+.table-dark {
+    background-color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--footer-background);
+    padding: 1.5rem 0;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive Design */
+
+/* Smartphones (Hochformat) ab 576px */
+@media (max-width: 575.98px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    #lokales-menü {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Tablets ab 768px */
+@media (max-width: 767.98px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    #lokales-menü {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Kleinere Desktops ab 992px */
+@media (max-width: 991.98px) {
+    h1 {
+        font-size: 2.25rem;
+    }
+    h2 {
+        font-size: 1.75rem;
+    }
+    p {
+        font-size: 1.1rem;
+    }
+    #lokales-menü {
+        margin-bottom: 2.5rem;
+    }
+}
+
+/* Große Monitore ab 1200px */
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+    .container {
+        max-width: 1140px;
+    }
+}
